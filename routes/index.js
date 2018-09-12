@@ -9,12 +9,12 @@ router.get('/', function(req, res) {
   })
 })
 
-/* GET new costumer page */
+/* GET new product page */
 router.get('/new', function(req, res, next) {
   res.render('new', { title: 'Novo Cadastro', doc: {"nome":"","quantidade":""}, action: '/new' });
 });
 
-/* GET new costumer confirm */
+/* GET new product confirm */
 router.post('/new', function(req, res) {
   var nome = req.body.nome;
   var quantidade = parseInt(req.body.quantidade);

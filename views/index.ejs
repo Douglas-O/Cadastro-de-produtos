@@ -9,8 +9,12 @@
     <ul>
       <% docs.forEach(function(product){ %>
         <li>
-          <a href="/edit/<%= product._id %>">
+            <%= "Nome= "%>
             <%= product.nome %>
+            <%=  "Quantidade= " %>
+            <%= product.quantidade %>
+          <a href="/edit/<%= product._id %>">
+            <input type="submit" value="Editar" />
           </a>
           <a href="/delete/<%= product._id %>" 
             onclick="return confirm('Tem certeza que deseja excluir?');">
