@@ -2,6 +2,7 @@
 
 Instruções para uso do programa:
 
+.Baixar o Node.js: http://nodejs.org/
 .Baixar o MongoDB: https://www.mongodb.com/download-center?jmp=nav#community
 
 .Na pasta bin de onde o MongoDB foi instalado, usar o comando:
