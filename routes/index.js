@@ -44,6 +44,20 @@ router.post('/edit/:id', function(req, res) {
     });
 });
 
+/* GET new search route */
+router.get('/search', function(req, res, next) {
+  res.render('search', { title: 'Pesquisa de produto', doc: {"nome":""}, action: '/search' });
+});
+
+/* GET new search confirm*/
+router.post('/search', function(req, res) {
+  var nome = req.body.nome;
+  global.db.search(nome, (e,docs) => {
+    if(e) { return console.log(e); }
+      res.redirect('/edit' + docs[0]._id) ;
+  });
+});
+
 /* GET new delete route*/
 router.get('/delete/:id', function(req, res) {
   var id = req.params.id;
