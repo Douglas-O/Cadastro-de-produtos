@@ -1,6 +1,4 @@
 # Cadastro-de-produtos
-Programa para cadastro de produtos usando Node.js
-
 
 Instruções para uso do programa:
 
