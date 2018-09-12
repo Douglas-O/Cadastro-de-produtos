@@ -7,19 +7,19 @@
   <body>
     <h1><%= title %></h1>
     <ul>
-      <% docs.forEach(function(customer){ %>
+      <% docs.forEach(function(product){ %>
         <li>
-          <a href="/edit/<%= customer._id %>">
-            <%= customer.nome %>
+          <a href="/edit/<%= product._id %>">
+            <%= product.nome %>
           </a>
-          <a href="/delete/<%= customer._id %>" 
+          <a href="/delete/<%= product._id %>" 
             onclick="return confirm('Tem certeza que deseja excluir?');">
-            X
+            <input type="submit" value="Excluir" />
           </a>
         </li>
       <% }) %>
     </ul>
     <hr />
-    <a href="/new">Cadastrar novo cliente</a>
+    <a href="/new">Cadastrar novo produto</a>
   </body>
 </html>
