@@ -7,3 +7,4 @@ Instruções para uso do programa:
 	
 	.Na pasta bin de onde o MongoDB foi instalado, usar o comando: <mongod --dbpath "aonde o programa de cadastro de produtos está localizado">
 	.Na pasta onde o programa de cadastro de produtos está localizado, usar o comando: <npm start>
+	.Acessar em qualquer navegador: localhost:3000
